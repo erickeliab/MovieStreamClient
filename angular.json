@@ -21,7 +21,11 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/js",
+              "src/images",
+              "src/fonts",
+              "src/css"
             ],
             "styles": [
               "src/styles.css"
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tmtsclient"
+    }
+  },
+  "defaultProject": "tmtsclient",
+  "cli": {
+    "analytics": false
+  }
 }

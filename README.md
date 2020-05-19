@@ -1,27 +1,71 @@
-# Tmtsclient
+## USER INTERFACE
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+ ### FRONT- PART PAGES
 
-## Development server
+Landing
+Home
+Movies
+Single Movie
+A-Z List
+News 
+Top IMDB
+About
+Contacts
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Landing page
+	Logo
+	Navbar
+	Search form
 
-## Code scaffolding
+### Home
+	Header
+	Hero
+	Suggestion
+	Latest
+	Request
+	Footer
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Movies
+	Header
+	Category Name + Filter btn
+	Main Section
+		Movies
+	Footer
 
-## Build
+### News 
+	Header
+	Main Section
+		Anouncement
+		Latest
+	Footer
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### About 
+	Header
+	Main Section
+		Mission
+		Vission
+	Footer
+	
+	
+### Single Movie
+	Header
+	Hero
+		Cover
+	Hero body
+	Other Movies
+	Footer
 
-## Running unit tests
+### Single Episode
+	Header
+	Hero
+		Cover
+	Hero body
+	Other Episodes
+	Footer
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Season
+	Header
+	Main
+		Episodes
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

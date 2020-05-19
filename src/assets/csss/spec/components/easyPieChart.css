@@ -1,0 +1,8 @@
+.easy-pie-chart {
+  position: relative; }
+  .easy-pie-chart span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0; }
