@@ -1,0 +1,10 @@
+<ng-container>
+<li class="list-group-item container row">
+   <span><b>{{movie.Name}}</b></span>  | <span class="btn btn-success">read</span> | <span class="btn btn-warning">edit</span> | <span class="btn btn-danger">delete</span>
+
+  </li>
+  <app-movie-card [movie]="movie"></app-movie-card>
+
+  <app-edit-movie [movie]="movie"></app-edit-movie>
+
+</ng-container>

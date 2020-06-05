@@ -12,12 +12,14 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { AboutComponent } from './pages/about/about.component';
 import { MoviesComponent } from './pages/movies/movies.component';
 import { SearchnavComponent } from './components/searchnav/searchnav.component';
+import { PagefooterComponent } from './components/pagefooter/pagefooter.component';
+import { MoviecardComponent } from './components/moviecard/moviecard.component';
 
 
 
 
 @NgModule({
-  declarations: [LayoutComponent, NavbarComponent, HeaderComponent, FooterComponent, HomeComponent, LandingComponent, NewsComponent, ContactsComponent, AboutComponent, MoviesComponent, SearchnavComponent],
+  declarations: [LayoutComponent, NavbarComponent, HeaderComponent, FooterComponent, HomeComponent, LandingComponent, NewsComponent, ContactsComponent, AboutComponent, MoviesComponent, SearchnavComponent, PagefooterComponent, MoviecardComponent],
   imports: [
     CommonModule,
     RouterModule

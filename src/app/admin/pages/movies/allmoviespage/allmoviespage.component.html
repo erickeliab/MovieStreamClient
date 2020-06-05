@@ -18,14 +18,31 @@
                  
 
                 <app-boxes></app-boxes>
-<p>All movies</p>
+                <div class="container p-3">
+                  <p>All movies</p>
+                  <hr>
+
+                  <ul class="list-group" >
+
+                    <app-admin-movie *ngFor="let movie of movies" [movie]="movie">
+
+                    </app-admin-movie>
+                    
+                  </ul>
+
+                </div>
+
                
             </div>
          </div>
     </div>
-    </main>
+   
     <app-footer></app-footer>
+  </main>
       </div>
     </div>
    
   </body>
+
+
+  

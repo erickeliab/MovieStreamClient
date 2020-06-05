@@ -1,0 +1,52 @@
+
+<div class="container bg-success mt-4 p-2 card">
+    <h2 class="mx-auto">Edit Movie</h2> 
+
+    <div class="col-md-2 col-3 container m-2 row form-control gen float-right" *ngFor="let gen of movie.genres">
+        <input type="checkbox" name="" id=""> Activation
+     </div>
+    <hr>
+<form class="form-horizontal" role="form">
+
+    <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2">
+            <div class="form-group">
+                <label for="inputAcademicTitle">Name</label>
+                <input type="text" class="form-control" id="inputAcademicTitle" value={{Name}} placeholder="Titel" name="Name" [(ngModel)]="Name">
+            </div>
+        </div>
+        <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="form-group">
+                <label for="inputFirstName">Country</label>
+                <input type="text" class="form-control" id="firstName" value={{movie.country.Name}} name="country" [(ngModel)]="country">
+            </div>
+        </div>
+        <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="form-group">
+                <label for="inputLastName">IMDB</label>
+                <input type="text" class="form-control" id="lastName"  value={{movie.IMDB}} name="IMDB" [(ngModel)]="IMDB">
+            </div>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                    <label for="inputMotto">Description</label>
+                    <textarea class="form-control" rows="3" id="motto" name="Description" [(ngModel)]="Description" >{{movie.Description}}</textarea>
+                </div>
+            </div>
+        </div>
+    
+        <hr>
+        <h4>Genres</h4>
+        <div class="col-md-2 col-3 container m-2 row form-control gen" *ngFor="let gen of movie.genres">
+           <input type="checkbox" name="" id=""> {{gen.Name}} 
+        </div>
+    
+        <hr>
+        <input type="submit" value="Submit" class="btn bg-dark text-success" >
+</form>
+</div>

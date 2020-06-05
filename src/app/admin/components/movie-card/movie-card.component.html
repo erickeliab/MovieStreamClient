@@ -1,0 +1,27 @@
+ <!-- card -->
+  <!-- view movie -->
+  <div class="card text-center mt-1 mb-4 col-11 col-md-11">
+    <div class="card-header">
+      No. {{movie.Movie_id}} by {{movie.User_id}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{movie.Name}}</h5>
+      <p class="card-text">{{movie.Description}}</p>
+      <a href="#" class="btn btn-primary">Play Now</a>
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item active">Others Info</li>
+        <li class="list-group-item"> Genres  
+            <div *ngFor="let genre of movie.genres">{{genre.Name}}</div>
+        </li>
+        <li class="list-group-item">Country : {{movie.country.Name}}</li>
+        <li class="list-group-item">IMDB: {{movie.IMDB}}</li>
+        <li class="list-group-item">{{movie.Deleted ? 'Deactivated' : 'Activated'}}</li>
+      </ul>
+    <div class="card-footer text-muted">
+      Added 2 days ago
+    </div>
+  </div>
+
+
