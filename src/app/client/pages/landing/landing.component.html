@@ -8,9 +8,9 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner" >
-            <ng-container *ngFor="let slid of items" >
+           
             <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/images/hero1.jpg" alt="First slide">
+              <img class="d-block w-100 h-100 slide-image" src="assets/images/hero1.jpg" alt="First slide">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Bla bla</h5>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iste rerum iure dicta perferendis aut optio officiis consequunt
@@ -18,53 +18,18 @@
               </div>
 
             </div>
-          </ng-container>
-            <div class="carousel-item ">
-              <img class="d-block w-100" src="assets/images/img_1.jpg" alt="First slide">
+         
+            <div class="carousel-item" *ngFor="let slid of items">
+              <img class="d-block w-100 slide-image" src="{{slid.Cover}}" alt="First slide">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Bla bla</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iste rerum iure dicta perferendis aut optio officiis consequunt
-                  ur cupiditate nam voluptatem veniam incidunt ipsa labore amet rem ab, numquam quis!</p>
+                <h5>{{slid.Name}}</h5>
+                <p>{{slid.Description}}</p>
               </div>
 
             </div>
 
 
-            <div class="carousel-item ">
-              <img class="d-block w-100" src="assets/images/img_2.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Bla bla</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iste rerum iure dicta perferendis aut optio officiis consequunt
-                  ur cupiditate nam voluptatem veniam incidunt ipsa labore amet rem ab, numquam quis!</p>
-              </div>
-
-              
-            </div>
-
-
-            <div class="carousel-item ">
-              <img class="d-block w-100" src="assets/images/hero1.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Bla bla</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iste rerum iure dicta perferendis aut optio officiis consequunt
-                  ur cupiditate nam voluptatem veniam incidunt ipsa labore amet rem ab, numquam quis!</p>
-              </div>
-
-              
-            </div>
-
-
-            <div class="carousel-item ">
-              <img class="d-block w-100" src="assets/images/hero1.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Bla bla</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iste rerum iure dicta perferendis aut optio officiis consequunt
-                  ur cupiditate nam voluptatem veniam incidunt ipsa labore amet rem ab, numquam quis!</p>
-              </div>
-
-              
-            </div>
-            
+          
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
