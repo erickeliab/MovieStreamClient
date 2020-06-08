@@ -6,4 +6,5 @@ export class  Genre{
     Name : string;
     Deleted : boolean;
     movies ?: Movie[];
+    Checked? : string;
 }

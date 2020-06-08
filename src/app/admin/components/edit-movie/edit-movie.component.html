@@ -42,10 +42,13 @@
     
         <hr>
         <h4>Genres</h4>
-        <div class="col-md-2 col-3 container m-2 row form-control gen" *ngFor="let gen of movie.genres">
-           <input type="checkbox" name="" id=""> {{gen.Name}} 
+        <div class="col-md-12 col-sm-12 col-xl-12 row">
+
+        <div class="col-md-2 col-3 container m-2 row form-control gen" *ngFor="let gen of allgenres">
+            <input type="checkbox" name="" id="" [checked]="gen.Checked" (change)="handleSelected($event,gen.Genre_id)"> 
+            {{gen.Name}} 
+         </div>
         </div>
-    
         <hr>
         <input type="submit" value="Submit" class="btn bg-dark text-success" >
 </form>
